@@ -1,19 +1,18 @@
 ﻿using CleanArchitecture.ISP.Domain.OperationResult;
-using CleanArchitecture.ISP.Domain.PointClocks;
-using CleanArchitecture.ISP.Domain.PointClocks.Actions.DateTime.DTOs;
+using CleanArchitecture.ISP.Domain.PointClocks.Actions.PointClockDateTime.DTOs;
 using CleanArchitecture.ISP.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
 
 namespace CleanArchitecture.ISP.Application.UseCases;
 public class SetDateTime
 {
-    public IEnumerable<Result<SetDateTime>> Execute(SetDateTimeRequest request)
+    public IEnumerable<Result> Execute(SetDateTimeRequest request)
     {
-        List<Result<SetDateTime>> resultsAction = [];
+        List<Result> resultsAction = [];
 
         foreach (PointClock pointClock in request.PointClocks)
         {
-            IPointClockGenericGateway pointClockGenericGateway = PointClockGatewayFactory.Create(pointClock);
+            IPointClockGenericGateway pointClockGenericGateway = PointClockGatewayFactory.CreateGeneric(pointClock);
 
             resultsAction.Add(pointClockGenericGateway.SetDateTime());
         }
