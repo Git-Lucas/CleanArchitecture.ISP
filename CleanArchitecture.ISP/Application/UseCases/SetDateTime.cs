@@ -1,5 +1,4 @@
-﻿using CleanArchitecture.ISP.Domain.OperationResult;
-using CleanArchitecture.ISP.Domain.PointClocks.Actions.PointClockDateTime.DTOs;
+﻿using CleanArchitecture.ISP.Application.OperationResult;
 using CleanArchitecture.ISP.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
 
@@ -19,4 +18,14 @@ public class SetDateTime
 
         return resultsAction;
     }
+
+}
+
+public record SetDateTimeRequest(PointClock[] PointClocks)
+{
+}
+
+public record SetDateTimeSuccess(string PointClockIp) : Result(true)
+{
+    public DateTime SettedDateTime => DateTime.UtcNow;
 }
