@@ -1,6 +1,4 @@
-﻿using CleanArchitecture.ISP.Domain.OperationResult;
-using CleanArchitecture.ISP.Domain.PointClocks.Actions.Biometrics.DTOs;
-using CleanArchitecture.ISP.Domain.PointClocks.Actions.Biometrics.OperationResult;
+﻿using CleanArchitecture.ISP.Application.OperationResult;
 using CleanArchitecture.ISP.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
 
@@ -26,5 +24,24 @@ public class ShareBiometrics
         }
 
         return actionResults;
+    }
+}
+
+public record ShareBiometricsRequest(PointClock[] PointClocks)
+{
+}
+
+public record ShareBiometricsSuccess(string PointClockIp, int NumberOfSharedBiometrics) : Result(true)
+{
+}
+
+public record ShareBiometricsPointClockNotSupported : Result
+{
+    public string MessageError { get; }
+
+    public ShareBiometricsPointClockNotSupported(string messageError)
+        : base(false)
+    {
+        MessageError = "The functionality was not executed. Reason: " + messageError;
     }
 }
