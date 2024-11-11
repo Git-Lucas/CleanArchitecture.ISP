@@ -1,6 +1,7 @@
-﻿using CleanArchitecture.ISP.Application.OperationResult;
+﻿using CleanArchitecture.ISP.Domain.OperationResult;
 using CleanArchitecture.ISP.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
+using CleanArchitecture.ISP.Infrastructure.PointClockGateways;
 
 namespace CleanArchitecture.ISP.Application.UseCases;
 public class SetDateTime
@@ -23,9 +24,4 @@ public class SetDateTime
 
 public record SetDateTimeRequest(PointClock[] PointClocks)
 {
-}
-
-public record SetDateTimeSuccess(string PointClockIp) : Result(true)
-{
-    public DateTime SettedDateTime => DateTime.UtcNow;
 }
