@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.ISP", "CleanArchitecture.ISP\CleanArchitecture.ISP.csproj", "{AA305171-7DD9-46ED-BC91-DC5E220594A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.ISP", "CleanArchitecture.ISP\CleanArchitecture.ISP.csproj", "{AA305171-7DD9-46ED-BC91-DC5E220594A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.ISP.Domain", "CleanArchitecture.ISP.Domain\CleanArchitecture.ISP.Domain.csproj", "{9FB4CC56-D0DD-423D-B357-DD1C8D1978AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AA305171-7DD9-46ED-BC91-DC5E220594A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA305171-7DD9-46ED-BC91-DC5E220594A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA305171-7DD9-46ED-BC91-DC5E220594A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB4CC56-D0DD-423D-B357-DD1C8D1978AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB4CC56-D0DD-423D-B357-DD1C8D1978AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB4CC56-D0DD-423D-B357-DD1C8D1978AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB4CC56-D0DD-423D-B357-DD1C8D1978AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

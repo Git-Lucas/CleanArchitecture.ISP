@@ -1,5 +1,4 @@
-﻿using CleanArchitecture.ISP.Application.OperationResult;
-using CleanArchitecture.ISP.Application.UseCases;
+﻿using CleanArchitecture.ISP.Domain.OperationResult;
 using CleanArchitecture.ISP.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
 

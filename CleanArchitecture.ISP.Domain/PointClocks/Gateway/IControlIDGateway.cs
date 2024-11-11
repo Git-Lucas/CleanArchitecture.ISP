@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.ISP.Application.OperationResult;
+﻿using CleanArchitecture.ISP.Domain.OperationResult;
 
 namespace CleanArchitecture.ISP.Domain.PointClocks.Gateway;
 public interface IControlIDGateway

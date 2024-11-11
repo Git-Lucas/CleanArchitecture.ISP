@@ -1,7 +1,6 @@
-﻿using CleanArchitecture.ISP.Application.UseCases;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
-namespace CleanArchitecture.ISP.Application.OperationResult;
+namespace CleanArchitecture.ISP.Domain.OperationResult;
 
 [JsonDerivedType(typeof(SetDateTimeSuccess), nameof(SetDateTimeSuccess))]
 [JsonDerivedType(typeof(ShareBiometricsSuccess), nameof(ShareBiometricsSuccess))]
