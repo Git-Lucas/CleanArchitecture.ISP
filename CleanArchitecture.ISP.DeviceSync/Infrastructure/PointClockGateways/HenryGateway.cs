@@ -3,7 +3,7 @@ using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Gateway;
 
 namespace CleanArchitecture.ISP.DeviceSync.Infrastructure.PointClockGateways;
-public class HenryGateway(PointClock pointClock) : IPointClockGenericGateway
+internal class HenryGateway(PointClock pointClock) : IPointClockGenericGateway
 {
     private readonly PointClock _pointClock = pointClock;
 

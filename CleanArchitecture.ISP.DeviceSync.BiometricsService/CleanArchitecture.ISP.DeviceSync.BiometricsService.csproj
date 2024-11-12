@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.ISP.DeviceSync.BiometricsService\CleanArchitecture.ISP.DeviceSync.BiometricsService.csproj" />
     <ProjectReference Include="..\CleanArchitecture.ISP.DeviceSync.Domain\CleanArchitecture.ISP.DeviceSync.Domain.csproj" />
   </ItemGroup>
 

@@ -2,15 +2,14 @@
 using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Gateway;
 
-namespace CleanArchitecture.ISP.DeviceSync.Infrastructure.PointClockGateways;
+namespace CleanArchitecture.ISP.DeviceSync.BiometricsService.Infrastructure.PointClockGateways;
 internal static class PointClockGatewayFactory
 {
-    internal static IPointClockGenericGateway CreateGeneric(PointClock pointClock)
+    internal static IControlIDGateway CreateControlID(PointClock pointClock)
     {
         return pointClock.Brand switch
         {
             Brand.ControlID => new ControlIDGateway(pointClock),
-            Brand.Henry => new HenryGateway(pointClock),
             _ => throw new NotSupportedException($"Unsupported point clock model: '{pointClock.Brand}'")
         };
     }
