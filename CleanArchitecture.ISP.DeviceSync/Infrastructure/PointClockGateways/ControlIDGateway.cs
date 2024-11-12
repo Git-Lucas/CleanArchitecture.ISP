@@ -3,7 +3,7 @@ using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
 using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Gateway;
 
 namespace CleanArchitecture.ISP.DeviceSync.Infrastructure.PointClockGateways;
-public class ControlIDGateway(PointClock pointClock) : IPointClockGenericGateway, IControlIDGateway
+internal class ControlIDGateway(PointClock pointClock) : IPointClockGenericGateway
 {
     private readonly PointClock _pointClock = pointClock;
 
@@ -12,16 +12,5 @@ public class ControlIDGateway(PointClock pointClock) : IPointClockGenericGateway
         Console.WriteLine($"{nameof(ControlIDGateway)}: Sending request to https://{_pointClock.Ip}:{_pointClock.Port}");
 
         return new SetDateTimeSuccess(_pointClock.Ip);
-    }
-
-    public Result ShareBiometrics()
-    {
-        int randomNumberOfSharedBiometrics = new Random().Next(800);
-
-        Console.WriteLine($"{nameof(ControlIDGateway)}: Sending request to https://{_pointClock.Ip}:{_pointClock.Port}");
-        Console.WriteLine($"{nameof(ControlIDGateway)}: Comparing biometrics...");
-        Console.WriteLine($"{nameof(ControlIDGateway)}: Sharing {randomNumberOfSharedBiometrics} biometrics...");
-
-        return new ShareBiometricsSuccess(_pointClock.Ip, randomNumberOfSharedBiometrics);
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace CleanArchitecture.ISP.DeviceSync;
+namespace CleanArchitecture.ISP.DeviceSync.BiometricsService;
 internal static class Serializer
 {
     private static JsonSerializerOptions Options => new()
