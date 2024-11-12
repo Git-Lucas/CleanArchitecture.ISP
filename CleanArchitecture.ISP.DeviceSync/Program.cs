@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.ISP;
-using CleanArchitecture.ISP.Application.UseCases;
-using CleanArchitecture.ISP.Domain.Brands.Entities;
-using CleanArchitecture.ISP.Domain.OperationResult;
-using CleanArchitecture.ISP.Domain.PointClocks.Entities;
+﻿using CleanArchitecture.ISP.DeviceSync;
+using CleanArchitecture.ISP.DeviceSync.Application.UseCases;
+using CleanArchitecture.ISP.DeviceSync.Domain.Brands.Entities;
+using CleanArchitecture.ISP.DeviceSync.Domain.OperationResult;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
 
 PointClock[] pointClocks = [
     new PointClock("192.168.254.221", 443, Brand.ControlID),

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace CleanArchitecture.ISP;
+namespace CleanArchitecture.ISP.DeviceSync;
 public static class Serializer
 {
     private static JsonSerializerOptions Options => new()

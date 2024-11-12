@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace CleanArchitecture.ISP.Domain.OperationResult;
+namespace CleanArchitecture.ISP.DeviceSync.Domain.OperationResult;
 
 [JsonDerivedType(typeof(SetDateTimeSuccess), nameof(SetDateTimeSuccess))]
 [JsonDerivedType(typeof(ShareBiometricsSuccess), nameof(ShareBiometricsSuccess))]

@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.ISP.Domain.OperationResult;
-using CleanArchitecture.ISP.Domain.PointClocks.Entities;
-using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
+﻿using CleanArchitecture.ISP.DeviceSync.Domain.OperationResult;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Gateway;
 
-namespace CleanArchitecture.ISP.Infrastructure.PointClockGateways;
+namespace CleanArchitecture.ISP.DeviceSync.Infrastructure.PointClockGateways;
 public class HenryGateway(PointClock pointClock) : IPointClockGenericGateway
 {
     private readonly PointClock _pointClock = pointClock;

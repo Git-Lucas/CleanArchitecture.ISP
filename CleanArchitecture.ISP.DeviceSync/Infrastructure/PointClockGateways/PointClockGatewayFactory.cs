@@ -1,8 +1,9 @@
-﻿using CleanArchitecture.ISP.Domain.Brands.Entities;
-using CleanArchitecture.ISP.Domain.PointClocks.Entities;
-using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
+﻿using CleanArchitecture.ISP.DeviceSync.Domain.Brands.Entities;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Gateway;
+using CleanArchitecture.ISP.Infrastructure.PointClockGateways;
 
-namespace CleanArchitecture.ISP.Infrastructure.PointClockGateways;
+namespace CleanArchitecture.ISP.DeviceSync.Infrastructure.PointClockGateways;
 public static class PointClockGatewayFactory
 {
     public static IPointClockGenericGateway CreateGeneric(PointClock pointClock)
