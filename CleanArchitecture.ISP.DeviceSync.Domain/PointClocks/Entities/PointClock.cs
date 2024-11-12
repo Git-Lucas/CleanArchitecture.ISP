@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.ISP.Domain.Brands.Entities;
+﻿using CleanArchitecture.ISP.DeviceSync.Domain.Brands.Entities;
 
-namespace CleanArchitecture.ISP.Domain.PointClocks.Entities;
+namespace CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
 public class PointClock(string ip, int port, Brand brand)
 {
     public string Ip { get; private set; } = ip;

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.ISP.Domain.OperationResult;
+﻿namespace CleanArchitecture.ISP.DeviceSync.Domain.OperationResult;
 public record ShareBiometricsSuccess(string PointClockIp, int NumberOfSharedBiometrics) : Result(true)
 {
 }

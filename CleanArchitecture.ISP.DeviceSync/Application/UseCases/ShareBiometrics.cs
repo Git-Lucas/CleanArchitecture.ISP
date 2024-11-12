@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.ISP.Domain.OperationResult;
-using CleanArchitecture.ISP.Domain.PointClocks.Entities;
-using CleanArchitecture.ISP.Domain.PointClocks.Gateway;
-using CleanArchitecture.ISP.Infrastructure.PointClockGateways;
+﻿using CleanArchitecture.ISP.DeviceSync.Domain.OperationResult;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Entities;
+using CleanArchitecture.ISP.DeviceSync.Domain.PointClocks.Gateway;
+using CleanArchitecture.ISP.DeviceSync.Infrastructure.PointClockGateways;
 
-namespace CleanArchitecture.ISP.Application.UseCases;
+namespace CleanArchitecture.ISP.DeviceSync.Application.UseCases;
 public class ShareBiometrics
 {
     public IEnumerable<Result> Execute(ShareBiometricsRequest request)
